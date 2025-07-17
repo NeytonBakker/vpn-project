@@ -6,11 +6,11 @@
 #include <thread>
 #include <chrono>
 
-#include "tun.h"  // предположим, здесь объявлен bool tun_alloc(); и extern WINTUN_SESSION_HANDLE session
+#include "tun.h"  
 
 extern WINTUN_SESSION_HANDLE session;
 
-// Исправленные extern указатели на функции с точным совпадением типов из wintun.h
+// Г€Г±ГЇГ°Г ГўГ«ГҐГ­Г­Г»ГҐ extern ГіГЄГ Г§Г ГІГҐГ«ГЁ Г­Г  ГґГіГ­ГЄГ¶ГЁГЁ Г± ГІГ®Г·Г­Г»Г¬ Г±Г®ГўГЇГ Г¤ГҐГ­ГЁГҐГ¬ ГІГЁГЇГ®Гў ГЁГ§ wintun.h
 extern BYTE* (__stdcall* pReceivePacket)(WINTUN_SESSION_HANDLE, DWORD*);
 extern void(__stdcall* pReleaseReceivePacket)(WINTUN_SESSION_HANDLE, const BYTE*);
 extern BYTE* (__stdcall* pAllocateSendPacket)(WINTUN_SESSION_HANDLE, DWORD);
