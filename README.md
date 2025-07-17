@@ -5,7 +5,7 @@ The project is divided into several stages: separate implementations of client a
 ## Project structure
 
 - `linux/` — source code and scripts for Linux:
-  - `src/` — `server.cpp`, `client.cpp`, `tun.cpp`, `tun.h`
+  - `src/` — `server.cpp`, `client.cpp`, `tun.cpp`
   - `scripts/` — `server_setup.sh`, `client_setup.sh`
 - `windows/` — source code and scripts for Windows:
   - `client.cpp`, `tun.h`, `tun.cpp`, `wintun.h`, `client_setup.ps1`, `wintun.dll`
